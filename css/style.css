@@ -1,0 +1,60 @@
+body {
+   font-family: PT Sans Narrow;
+   font-size: 14px;
+   margin: 0;
+   
+}
+
+.container {
+   position: relative;
+   left: 0;
+   top: 0;
+   width: 100%;
+   color: white;
+   background-color: black;
+   z-index: 5;
+   min-height: 72px;
+}
+
+.header {
+   font-size: 16px;
+   display: flex;
+   justify-content: space-between;
+   max-width: 940px;
+   min-height: 72px;
+   margin: 0 auto;
+   align-items: center;
+}
+
+.list {
+   display: flex;
+   list-style: none;
+   margin: 0;
+}
+
+.item {
+   margin-right: 40px;
+   text-transform: uppercase;
+}
+
+.item:last-child {
+   margin-right: 0;
+}
+
+.item-link {
+   color: white;
+   text-decoration: none;
+}
+
+.singin {
+   text-transform: uppercase; 
+}
+
+.button {
+   border: none;
+}
+
+.image {
+   width: 100%;
+   height: auto;
+}
