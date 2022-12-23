@@ -2,37 +2,43 @@
 <html lang="ru">
 <head>
    <meta charset="UTF-8">
+   <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/style.css">
    <title>BarberShop</title>
    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,700&display=swap" rel="stylesheet" />
 </head>
 <body>
-   <div class="container">
-      <header class="header">
-         <nav class="navigation">
-            <ul class="list">
-               <li class="item">
-                  <a href="#" class="item-link">Информация</a>
+   <header class="header">
+      <div class="container">
+         <nav class="container__menu">
+            <ul class="container__list">
+               <li class="container__item">
+                  <a href="#" class="container__item-link">Информация</a>
                </li>
-               <li class="item">
-                  <a href="#" class="item-link">Новости</a>
+               <li class="container__item">
+                  <a href="#" class="container__item-link">Новости</a>
                </li>
-               <li class="item">
-                  <a href="#" class="item-link">Прайс-лист</a>
+               <li class="container__item">
+                  <a href="#" class="container__item-link">Прайс-лист</a>
                </li>
-               <li class="item">
-                  <a href="#" class="item-link">Магазин</a>
+               <li class="container__item">
+                  <a href="#" class="container__item-link">Магазин</a>
                </li>
-               <li class="item">
-                  <a href="#" class="item-link">Конктакты</a>
+               <li class="container__item">
+                  <a href="#" class="container__item-link">Конктакты</a>
                </li>
             </ul>
          </nav>
-         <button class="button">
-            <span class="singin">Вход</span>      
-         </button>
-      </header>
-   </div>
+         <div class="login">
+            <img class="login__icon" src="images/login.svg" alt="login">
+            <button type="button" class="login__button-login button">
+               Вход      
+            </button>
+         </div>
+      </div>
+   </header>
+
+
       <main>
          <img class="image" src="images/Studio.jpg" alt="Studio">
       </main>
