@@ -1,17 +1,23 @@
 :root {
-   --white: #fff;
-   --black: #000;
+   --primary: rgba(255, 255, 255, 1);
+   --secondary: rgba(0, 0, 0, 1);
+   --font-primary: 14px;
+   --font-secondart: 16px;
 }
 
-body {
+body, input, textarea, button {
    font-family: PT Sans Narrow ;
-   font-size: 14px;
-   margin: 0;
-   
+   font-size: var(--font-primary);
+   text-transform: uppercase;
+}
+
+a {
+   text-decoration: none;
 }
 
 ul {
    list-style: none;
+   padding-left: 0;
 }
 
 .header  {
@@ -19,14 +25,14 @@ ul {
    left: 0;
    top: 0;
    width: 100%;
-   color: var(--white);
-   background-color: var(--black);
+   color: var(--primary);
+   background-color: var(--secondary);
    z-index: 5;
    min-height: 72px;
 }
 
-.container {
-   font-size: 16px;
+.header__container {
+   font-size: var(--font-secondary);
    display: flex;
    justify-content: space-between;
    max-width: 940px;
@@ -35,47 +41,41 @@ ul {
    align-items: center;
 }
 
-.container__list {
+.menu__list {
    display: flex;
    margin: 0;
 }
 
-.container__item {
+.menu__item {
    margin-right: 40px;
-   text-transform: uppercase;
 }
 
-.container__item:last-child {
+.menu__item:last-child {
    margin-right: 0;
 }
 
-.container__item-link {
-   color: var(--white);
-   text-decoration: none;
+.menu__item-link {
+   color: var(--primary);
 }
 
 .button {
    border: none;
-   color: var(--white);
-   background-color: var(--black);
-   font-family: inherit;
-   font-size: 16px;
-   text-transform: uppercase;
+   color: var(--primary);
+   background-color: var(--secondary);
+   font-size: var(--font-secondart);
 }
 
-.login__button-login {
+.button-login {
+   display: flex;
+   align-items: center;
    padding: 5px;
 }
 
-.login__button-login:hover {
+.button-login:hover {
    cursor: pointer;
 }
 
-.login {
-   vertical-align: middle;
-}
-
-.login__icon {
+.button__icon {
    margin-right: 7px;
 }
 
