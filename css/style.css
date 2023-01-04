@@ -1,14 +1,23 @@
 :root {
    --primary: rgba(255, 255, 255, 1);
    --secondary: rgba(0, 0, 0, 1);
+   --icon-header: rgba(189, 189, 189, 1);
+   --additionaly: rgba(26, 26, 26, 1);
    --font-primary: 14px;
-   --font-secondart: 16px;
+   --font-secondary: 16px;
 }
 
 body, input, textarea, button {
-   font-family: PT Sans Narrow ;
+   font-family: PT Sans Narrow;
    font-size: var(--font-primary);
    text-transform: uppercase;
+}
+
+body {
+   background-image: url(/images/Studio.jpg);
+   background-color: var(--secondary);
+   background-repeat: no-repeat;
+   background-size: 100%;
 }
 
 a {
@@ -20,23 +29,24 @@ ul {
    padding-left: 0;
 }
 
-.header  {
+/*--------------------HEADER-----------------------*/
+
+.header {
    position: relative;
-   left: 0;
-   top: 0;
    width: 100%;
    color: var(--primary);
    background-color: var(--secondary);
-   z-index: 5;
-   min-height: 72px;
+   min-height: 70px;
 }
 
 .header__container {
    font-size: var(--font-secondary);
    display: flex;
    justify-content: space-between;
-   max-width: 940px;
-   min-height: 72px;
+   max-width: 980px;
+   box-sizing: border-box;
+   padding: 0 40px;
+   min-height: 70px;
    margin: 0 auto;
    align-items: center;
 }
@@ -58,28 +68,58 @@ ul {
    color: var(--primary);
 }
 
-.button {
+.holder {
+   display: flex;
+}
+
+
+.holder__button-search {
+   margin-right: 21px;
    border: none;
    color: var(--primary);
    background-color: var(--secondary);
-   font-size: var(--font-secondart);
-}
-
-.button-login {
    display: flex;
    align-items: center;
-   padding: 5px;
 }
 
-.button-login:hover {
+.holder__button-search:hover {
    cursor: pointer;
 }
 
-.button__icon {
-   margin-right: 7px;
+.holder__button-cart {
+   margin-right: 21px;
+   border: none;
+   color: var(--primary);
+   background-color: var(--secondary);
+   display: flex;
+   align-items: center;
 }
 
-.image {
-   width: 100%;
-   height: auto;
+.holder__button-cart:hover {
+   cursor: pointer;
 }
+
+.holder__button-login {
+   border: none;
+   color: var(--primary);
+   background-color: var(--secondary);
+   font-size: var(--font-secondary);
+   display: flex;
+   align-items: center;
+}
+
+.holder__button-login:hover {
+   cursor: pointer;
+}
+
+.holder__icon-header {
+   fill: var(--icon-header);
+   width: 16px;
+   height: 16px;
+}
+
+.holder__icon-header--last {
+   margin-right: 9px;
+}
+
+/*--------------------MAIN-----------------------*/
