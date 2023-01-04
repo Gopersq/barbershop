@@ -3,8 +3,11 @@
    --secondary: rgba(0, 0, 0, 1);
    --icon-header: rgba(189, 189, 189, 1);
    --additionaly: rgba(26, 26, 26, 1);
+   --header-hover: rgba(89, 89, 89, 1);
+   --header-fixed: rgba(231, 231, 231, 1);
    --font-primary: 14px;
    --font-secondary: 16px;
+   --hedaer-height: 70px;
 }
 
 body, input, textarea, button {
@@ -36,7 +39,7 @@ ul {
    width: 100%;
    color: var(--primary);
    background-color: var(--secondary);
-   min-height: 70px;
+   min-height: var(--hedaer-height);
 }
 
 .header__container {
@@ -46,49 +49,72 @@ ul {
    max-width: 980px;
    box-sizing: border-box;
    padding: 0 40px;
-   min-height: 70px;
+   min-height: var(--hedaer-height);
    margin: 0 auto;
    align-items: center;
 }
 
+.menu {
+   min-height: var(--hedaer-height);
+}
+
 .menu__list {
+   min-height: var(--hedaer-height);
    display: flex;
    margin: 0;
 }
 
 .menu__item {
-   margin-right: 40px;
-}
-
-.menu__item:last-child {
-   margin-right: 0;
+   min-height: var(--hedaer-height);
 }
 
 .menu__item-link {
    color: var(--primary);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: var(--hedaer-height);
+   padding: 0 20px;
+}
+
+.menu__item-link:hover {
+   background-color: var(--header-hover);
+}
+
+.menu__item-link:focus {
+   outline: solid 4px var(--header-fixed);
+   box-sizing: border-box;
 }
 
 .holder {
    display: flex;
-   min-height: 70px;
+   min-height: var(--hedaer-height);
 }
 
 .holder__button {
-   margin-right: 21px;
+   padding: 0;
    border: none;
    color: var(--primary);
-   background-color: var(--secondary);
+   background-color: transparent;
    display: flex;
+   justify-content: center;
    align-items: center;
+   min-width: 56px;
 }
 
 .holder__button--last {
-   margin-right: 0;
+   min-width: 98px;
    font-size: var(--font-secondary);
 }
 
 .holder__button:hover {
    cursor: pointer;
+   background-color: var(--header-hover);
+}
+
+.holder__button:focus {
+   outline: solid 4px var(--header-fixed);
+   box-sizing: border-box;
 }
 
 .holder__icon-header {
