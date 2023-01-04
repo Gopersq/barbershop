@@ -70,10 +70,10 @@ ul {
 
 .holder {
    display: flex;
+   min-height: 70px;
 }
 
-
-.holder__button-search {
+.holder__button {
    margin-right: 21px;
    border: none;
    color: var(--primary);
@@ -82,33 +82,12 @@ ul {
    align-items: center;
 }
 
-.holder__button-search:hover {
-   cursor: pointer;
-}
-
-.holder__button-cart {
-   margin-right: 21px;
-   border: none;
-   color: var(--primary);
-   background-color: var(--secondary);
-   display: flex;
-   align-items: center;
-}
-
-.holder__button-cart:hover {
-   cursor: pointer;
-}
-
-.holder__button-login {
-   border: none;
-   color: var(--primary);
-   background-color: var(--secondary);
+.holder__button--last {
+   margin-right: 0;
    font-size: var(--font-secondary);
-   display: flex;
-   align-items: center;
 }
 
-.holder__button-login:hover {
+.holder__button:hover {
    cursor: pointer;
 }
 
