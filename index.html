@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
 <head>
    <meta charset="UTF-8">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" href="css/style.css">
    <title>BarberShop</title>
    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,700&display=swap" rel="stylesheet" />
+   <html lang="ru"><link href="https://fonts.googleapis.com/css?family=PT+Sans:regular&display=swap" rel="stylesheet" />
+   
    <link rel="icon" href="images/favicon.ico">
 </head>
 
@@ -49,34 +50,41 @@
    <main class="page">
       <div class="main__container">
          <div class="logo">
-            <img src="images/logo.svg" alt="">
+            <img src="images/logo.svg" alt="logo" width="361" height="152">
          </div>
-         <section class="section">
-            <article>
-               <h2>
-
+         <section class="section-features">
+            <article class="features">
+               <h2 class="features__title">
+                  Быстро
                </h2>
-               <img src="" alt="">
-               <p>
-
+               <svg class="features__icon">
+                  <use xlink:href="images/sprite.svg#bullet"></use>
+               </svg>
+               <p class="features__text">
+                  Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый
+                  обладатель стильной стрижки-минутки!
                </p>
             </article>
-            <article>
-               <h2>
-
+            <article class="features">
+               <h2 class="features__title">
+                  Круто
                </h2>
-               <img src="" alt="">
-               <p>
-                  
+               <svg class="features__icon">
+                  <use xlink:href="images/sprite.svg#bullet"></use>
+               </svg>
+               <p class="features__text">
+                  Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.
                </p>
             </article>
-            <article>
-               <h2>
-
+            <article class="features features--last">
+               <h2 class="features__title">
+                  Дорого
                </h2>
-               <img src="" alt="">
-               <p>
-                  
+               <svg class="features__icon">
+                  <use xlink:href="images/sprite.svg#bullet"></use>
+               </svg>
+               <p class="features__text">
+                  Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?
                </p>
             </article>
          </section>
