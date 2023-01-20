@@ -48,7 +48,7 @@
    </header>
 
    <main class="page">
-      <div class="first-container  container">
+      <div class="container-features  container">
          <div class="logo">
             <img src="images/logo.svg" alt="logo" width="361" height="152">
          </div>
@@ -57,9 +57,9 @@
                <h2 class="features__title">
                   Быстро
                </h2>
-               <svg class="features__icon">
+               <!-- <svg class="features__icon">
                   <use xlink:href="images/sprite.svg#bullet"></use>
-               </svg>
+               </svg> -->
                <p class="features__text">
                   Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый
                   обладатель стильной стрижки-минутки!
@@ -69,30 +69,30 @@
                <h2 class="features__title">
                   Круто
                </h2>
-               <svg class="features__icon">
+               <!-- <svg class="features__icon">
                   <use xlink:href="images/sprite.svg#bullet"></use>
-               </svg>
+               </svg> -->
                <p class="features__text">
-                  Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.
+                  Забудьте, как вы стриглись раньше. Мы&nbspсделаем из вас звезду футбола или кино!<br>Во всяком случае внешне.
                </p>
             </article>
-            <article class="features features--last">
+            <article class="features">
                <h2 class="features__title">
                   Дорого
                </h2>
-               <svg class="features__icon">
+               <!-- <svg class="features__icon">
                   <use xlink:href="images/sprite.svg#bullet"></use>
-               </svg>
+               </svg> -->
                <p class="features__text">
-                  Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?
+                  Наши мастера - профессионалы своего&nbspдела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?
                </p>
             </article>
          </section>
       </div>
 
-      <div class="second-container container">
+      <div class="container-benefits container">
          <section class="benefits">
-            <h2 class="benefits__title">Популярные услуги</h2>
+            <h2 class="benefits__title title">Популярные услуги</h2>
             <ul class="benefits__list">
                <li class="benefits__item">
                   <p>Стрижка машинкой</p>
@@ -111,7 +111,7 @@
                   <p>2300 ₽</p>
                </li>
             </ul>
-            <button>
+            <button class="benefits__button button">
                Псмотреть все
             </button>
          </section>
@@ -123,36 +123,51 @@
          </section>
       </div>
 
-      <div class="third-container container">
-         <section>
-            <h2>Контакты</h2>
-            <p><span>Барбершоп "Бородинский"</span></p>
-            <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-            <a href="">+7 800 555-86-28</a>
-            <p><span>Время работы</span></p>
-            <p>пн—пт: с 10:00 до 22:00 сб—вс: с 10:00 до 19:00</p>
-            <div>
-               <button>
+      <div class="container-contacts container">
+         <section class="contacts">
+            <h2 class="contacts__title title">Контакты</h2>
+            <h3 class="contacts__subtitle">Барбершоп «Бородинский»</h3>
+            <p class="contacts__address">Санкт-Петербург, набережная реки Карповки, 5, литера&nbspП.</p>
+            <a class="contacts__phone" href="tel:+78005558628">+7 800 555-86-28</a>
+            <h3  class="contacts__subtitle">Время работы</h3>
+            <p class="contacts__time">пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00</p>
+            <div class="contacts__buttons">
+               <button class="contacts__button button">
                   Как проехать
                </button>
-               <button>
+               <button class="contacts__button contacts__button-white button">
                   Обратная связь
                </button>
             </div>
          </section>
-         <section>
-            <h2>
-               Заисаться
+         <section class="form">
+            <h2 class="form__title title">
+               Записаться
             </h2>
-            <p>
-               Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.
+            <p class="form__text">
+               Укажите желаемую дату и время и мы свяжемся с вами для подтверждения&nbspброни.
             </p>
-            <form action="">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <button>
+            
+            <form action="" class="form__record">
+            <div class="form__row">
+            <div class="form__date">
+                  <label class="label" for="date">Дата</label>
+                  <input class="form__date-input input" type="text" id="date" name="date" placeholder="01.01.2020">
+               </div>
+               <div class="form__time">
+                  <label class="label" for="time">Время</label>
+                  <input class="form__time-input input" type="text" id="time" name="time" placeholder="10:10">
+               </div>
+               <div class="form__phone">
+                  <label class="label" for="phone">Телефон</label>
+                  <input class="form__time-phone input" type="phone" id="phone" name="phone" placeholder="+7 800 000-00-00">
+               </div>
+            </div>
+            <div class="form__firstname">
+               <label class="label" class="" for="firstname">Ваше имя</label>
+               <input class="form__firstname-input input" type="text" id="firstname" name="firstname">
+            </div>
+            <button class="form__button button">
                Записаться
             </button>
             </form>
@@ -164,44 +179,58 @@
    <footer class="footer">
       <div class="foooter__container container">
 
-         <div >
-            <div class="logo">
-               <svg>
-                  <use xlink:href="images/sprite.svg#"></use>
-               </svg>
+         <div class="about">
+            <div class="about__logo">
+               <img src="/images/logo-footer.svg" alt="logo-footer" width="187" height="24">
             </div>
             <div>
-               <p>
+               <p class="about__address">
                   Санкт-Петербург, набережная реки Карповки, 5, литера П
                </p>
-               <a href="">+7 800 555-86-28</a>
-               <a href="">Как нас найти?</a>
+               <a class="about__phone" href="tel:+78005558628">+7 800 555-86-28</a>
+               <a class="about__map" href="#">Как нас найти?</a>
             </div>
          </div>  
 
-         <div class="email">
-            <p>
+         <section class="email">
+            <h2 class="email__title">
                Получайте лучшие предложения
-            </p>
-            <form action="">
-               <input type="text">
-               <button></button>
+            </h2>
+            <form action="" class="email__form">
+               <input class="email__input input" type="email" name="rmail" placeholder="email@htmlacademy.ru">
+               <button class="email__button">
+                  <svg class="email__button-icon">
+                     <use xlink:href="images/sprite.svg#arrow-right"></use>
+                  </svg>
+               </button>
             </form>
-         </div>
+         </section>
 
-         <div>
-            <p>
+         <section class="socials">
+            <h2 class="socials__title">
                Давайте дружить
-            </p>
-            <div class="socials">
-               <img src="" alt="">
-               <img src="" alt="">
-               <img src="" alt="">
+            </h2>
+            <div class="socials__list">
+               <button class="socials__item">
+                  <svg class="socials__item-icon">
+                     <use xlink:href="images/sprite.svg#twitter"></use>
+                  </svg>
+               </button>
+               <button class="socials__item">
+                  <svg class="socials__item-icon">
+                     <use xlink:href="images/sprite.svg#vk"></use>
+                  </svg>
+               </button>
+               <button class="socials__item">
+                  <svg class="socials__item-icon">
+                     <use xlink:href="images/sprite.svg#instagram"></use>
+                  </svg>
+               </button>
             </div>
-            <p>
-               Сделано в <span>.html academy</span>
+            <p class="socials__author">
+               Сделано в <a href="#" class="socials__author-link">.html academy</a></span>
             </p>
-         </div>
+         </section>
 
       </div>
    </footer>
