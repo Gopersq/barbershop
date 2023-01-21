@@ -187,7 +187,7 @@ h2, h3, p {
 .container-benefits {
    background-image: url(/images/bgs.jpg);
    display: flex;
-   height: 409px;
+   min-height: 409px;
    margin-top: 58px;
 }
 
@@ -210,8 +210,21 @@ h2, h3, p {
 }
 
 .benefits__button {
-   width: 192px;
+   min-width: 192px;
 }
+
+.slider__title {
+   margin-top: 40px;
+}
+
+.slider__item {
+   display:none;
+}
+
+
+
+
+
 
 /*-------------------MAIN-third-block-----------------------*/
 
@@ -227,7 +240,7 @@ h2, h3, p {
    text-transform: uppercase;
    font-weight: 700;
    border: none;
-   height: 44px;
+   min-height: 44px;
 }
 
 .button:hover {
@@ -250,7 +263,7 @@ h2, h3, p {
 .contacts {
    padding-left: 40px;
    color: var(--additionaly);
-   min-width: 431px;
+   max-width: 431px;
    box-sizing: border-box;
 }
 
@@ -286,13 +299,13 @@ h2, h3, p {
 
 .contacts__buttons {
    margin-top: 21px;
-   width: 328px;
+   max-width: 328px;
    display: flex;
    justify-content: space-between;
 }
 
 .contacts__button {
-   width: 148px;
+   min-width: 148px;
 }
 
 .contacts__button-white {
@@ -316,7 +329,7 @@ h2, h3, p {
 }
 
 .form__title {
-   margin-top: 42px;
+   margin-top: 40px;
 }
 
 .form__text {
@@ -330,30 +343,30 @@ h2, h3, p {
 
 .form__record {
    margin-top: 24px;
+   max-width: 430px;
 }
 
 .form__row {
    display: flex;
-   width: 430px;
    justify-content: space-between;
 }
 
 .form__date {
-   width: 114px;
+   max-width: 114px;
 }
 
 .form__time {
-   width: 74px;
+   max-width: 74px;
 }
 
 .form__phone {
-   width: 208px;
+   max-width: 208px;
 }
 
 .input {
    border: 2px solid var(--secondary);
    box-sizing: border-box;
-   height: 44px;
+   min-height: 44px;
 }
 
 .input::placeholder {
@@ -365,6 +378,7 @@ h2, h3, p {
 
 .input:hover {
    border: 2px solid rgba(175, 120, 66, 1);
+   transition: 0.2s;
 }
 
 .input:focus {
@@ -383,27 +397,27 @@ h2, h3, p {
 }
 
 .form__date-input {
-   width: 114px;
+   width:100%;
    margin-top: 8px;
 }
 
 .form__time-input {
-   width: 74px;
+   width:100%;
    margin-top: 8px;
 }
 
 .form__time-phone {
-   width: 208px;
+   width:100%;
    margin-top: 8px;
 }
 
 .form__firstname-input {
-   width: 430px;
+   width: 100%;
    margin-top: 8px;
 }
 
 .form__button {
-   width: 130px;
+   min-width: 130px;
    margin-top: 19px;
 }
 
@@ -425,7 +439,7 @@ h2, h3, p {
 }
 
 .about {
-   width: 187px;
+   max-width: 187px;
 }
 
 .about__logo {
@@ -458,7 +472,7 @@ h2, h3, p {
 }
 
 .email {
-   width: 279px;
+   max-width: 279px;
 }
 
 .email__title {
@@ -473,7 +487,7 @@ h2, h3, p {
 }
 
 .email__input {
-   width: 223px;
+   width: 100%;
    border: 2px solid var(--secondary);
    box-sizing: border-box;
    outline: 0;
@@ -488,7 +502,7 @@ h2, h3, p {
 
 .email__button {
    background-color: var(--secondary);
-   width: 56px;
+   min-width: 56px;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -505,7 +519,7 @@ h2, h3, p {
 }
 
 .socials {
-   min-width: 184px;
+   max-width: 184px;
 }
 
 .socials__title {
@@ -515,14 +529,14 @@ h2, h3, p {
 }
 
 .socials__list {
-   display: flex;
-   justify-content: space-between;
+   display: grid;
+   grid-template-columns: repeat(3, 56px);
+   grid-gap: 8px;
    margin-top: 14px;
 }
 
 .socials__item {
-   width: 56px;
-   height: 44px;
+   min-height: 44px;
    background-color: var(--secondary);
    display: flex;
    align-items: center;
