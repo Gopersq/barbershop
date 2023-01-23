@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+<html lang="ru">
 <head>
    <meta charset="UTF-8">
+   <base href="./">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link rel="stylesheet" href="css/style.css">
    <title>BarberShop</title>
    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,700&display=swap" rel="stylesheet" />
-   <html lang="ru"><link href="https://fonts.googleapis.com/css?family=PT+Sans:regular&display=swap" rel="stylesheet" />
-   
+   <link href="https://fonts.googleapis.com/css?family=PT+Sans:regular&display=swap" rel="stylesheet" />
    <link rel="icon" href="images/favicon.ico">
 </head>
 
@@ -29,17 +30,17 @@
          <div class="holder">
             <button class="holder__button">
                <svg class="holder__icon-header">
-                  <use xlink:href="images/sprite.svg#search"></use>
+                  <use xlink:href="/../images/sprite.svg#search"></use>
                </svg>
             </button>
             <button class="holder__button">
                <svg class="holder__icon-header">
-                  <use xlink:href="images/sprite.svg#cart"></use>
+                  <use xlink:href="/../images/sprite.svg#cart"></use>
                </svg>
             </button>
             <button class="holder__button holder__button--last">
                <svg class="holder__icon-header holder__icon-header--last">
-                  <use xlink:href="images/sprite.svg#login"></use>
+                  <use xlink:href="/../images/sprite.svg#login"></use>
                </svg>
                Вход
             </button>
@@ -49,17 +50,15 @@
 
    <main class="page">
       <div class="container-features  container">
-         <div class="logo">
-            <img src="images/logo.svg" alt="logo" width="361" height="152">
-         </div>
+         <img class="logo" src="/images/logo.svg" alt="logo" width="361" height="152">
          <section class="features-list">
             <article class="features">
                <h2 class="features__title">
                   Быстро
                </h2>
-               <!-- <svg class="features__icon">
+               <svg class="features__icon">
                   <use xlink:href="images/sprite.svg#bullet"></use>
-               </svg> -->
+               </svg>
                <p class="features__text">
                   Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый
                   обладатель стильной стрижки-минутки!
@@ -69,9 +68,9 @@
                <h2 class="features__title">
                   Круто
                </h2>
-               <!-- <svg class="features__icon">
+               <svg class="features__icon">
                   <use xlink:href="images/sprite.svg#bullet"></use>
-               </svg> -->
+               </svg>
                <p class="features__text">
                   Забудьте, как вы стриглись раньше. Мы&nbspсделаем из вас звезду футбола или кино!<br>Во всяком случае внешне.
                </p>
@@ -80,9 +79,9 @@
                <h2 class="features__title">
                   Дорого
                </h2>
-               <!-- <svg class="features__icon">
+               <svg class="features__icon">
                   <use xlink:href="images/sprite.svg#bullet"></use>
-               </svg> -->
+               </svg>
                <p class="features__text">
                   Наши мастера - профессионалы своего&nbspдела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?
                </p>
@@ -111,7 +110,7 @@
                   <p>2300 ₽</p>
                </li>
             </ul>
-            <button class="benefits__button button">
+            <button type="submit" class="benefits__button button">
                Псмотреть все
             </button>
          </section>
@@ -123,10 +122,10 @@
                Фотогалерея
             </h2>
             <div class="slider__carousel"  id="slider"> 
-               <img class="slider__item" src="images/slider.jpg" alt="Slide 1">
-               <img class="slider__item" src="images/slider.jpg" alt="Slide 2">
-               <img class="slider__item" src="images/slider.jpg" alt="Slide 3">
-               <img class="slider__item" src="images/slider.jpg" alt="Slide 4">
+               <img class="slider__item" src="/../images/slider.jpg" alt="Slide 1">
+               <img class="slider__item" src="/../images/slider.jpg" alt="Slide 2">
+               <img class="slider__item" src="/../images/slider.jpg" alt="Slide 3">
+               <img class="slider__item" src="/../images/slider.jpg" alt="Slide 4">
             </div>
             <div class="slider__cintrols">
                <button ></button>
@@ -144,10 +143,10 @@
             <h3  class="contacts__subtitle">Время работы</h3>
             <p class="contacts__time">пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00</p>
             <div class="contacts__buttons">
-               <button class="contacts__button button">
+               <button type="submit" class="contacts__button button">
                   Как проехать
                </button>
-               <button class="contacts__button contacts__button-white button">
+               <button type="submit" class="contacts__button button--white button">
                   Обратная связь
                </button>
             </div>
@@ -161,31 +160,45 @@
             </p>
             
             <form action="" class="form__record">
-            <div class="form__row">
-            <div class="form__date">
+
+               <div class="form__row">
+
+               <div class="form__date">
                   <label class="label" for="date">Дата</label>
+                  <svg class="form__icon">
+                     <use xlink:href="images/sprite.svg#info"></use>
+                  </svg>
                   <input class="form__date-input input" type="text" id="date" name="date" placeholder="01.01.2020">
                </div>
+
                <div class="form__time">
                   <label class="label" for="time">Время</label>
+                  <svg class="form__icon">
+                     <use xlink:href="images/sprite.svg#info"></use>
+                  </svg>
                   <input class="form__time-input input" type="text" id="time" name="time" placeholder="10:10">
                </div>
+
                <div class="form__phone">
                   <label class="label" for="phone">Телефон</label>
                   <input class="form__time-phone input" type="phone" id="phone" name="phone" placeholder="+7 800 000-00-00">
                </div>
+            
+               <div class="form__firstname">
+                  <label class="label" class="" for="firstname">Ваше имя</label>
+                  <input class="form__firstname-input input" type="text" id="firstname" name="firstname">
+               </div>
+
             </div>
-            <div class="form__firstname">
-               <label class="label" class="" for="firstname">Ваше имя</label>
-               <input class="form__firstname-input input" type="text" id="firstname" name="firstname">
-            </div>
-            <button class="form__button button">
-               Записаться
-            </button>
+
+               <button type="submit" class="form__button button">
+                  Записаться
+               </button>
+
             </form>
          </section>
       </div>
-
+         
    </main>
 
    <footer class="footer">
@@ -193,7 +206,7 @@
 
          <div class="about">
             <div class="about__logo">
-               <img src="/images/logo-footer.svg" alt="logo-footer" width="187" height="24">
+               <img src="images/logo-footer.svg" alt="logo-footer" width="187" height="24">
             </div>
             <div>
                <p class="about__address">
@@ -210,7 +223,7 @@
             </h2>
             <form action="" class="email__form">
                <input class="email__input input" type="email" name="rmail" placeholder="email@htmlacademy.ru">
-               <button class="email__button">
+               <button type="submit" class="email__button">
                   <svg class="email__button-icon">
                      <use xlink:href="images/sprite.svg#arrow-right"></use>
                   </svg>
