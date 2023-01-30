@@ -1,12 +1,263 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
    <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <base href="./">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="css/style.css">
+   <title>BarberShop</title>
+   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,700&display=swap" rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css?family=PT+Sans:regular&display=swap" rel="stylesheet" />
+   <link rel="icon" href="images/favicon.ico">
 </head>
+
 <body>
-   <h1>Hello</h1>
+   <header class="header">
+      <div class="header__container  container">
+         <nav class="menu">
+            <ul class="menu__list">
+               <li class="menu__item">
+                  <a href="#" class="menu__item-link">О нас</a>
+               </li>
+               <li class="menu__item">
+                  <a href="#" class="menu__item-link">Каталог</a>
+               </li>
+               <li class="menu__item">
+                  <a href="#" class="menu__item-link">Частые вопросы</a>
+               </li>
+            </ul>
+         </nav>
+         <div class="holder">
+            <button class="holder__button">
+               <svg class="holder__icon-header">
+                  <use xlink:href="/../images/sprite.svg#search"></use>
+               </svg>
+            </button>
+            <button class="holder__button">
+               <svg class="holder__icon-header">
+                  <use xlink:href="/../images/sprite.svg#cart"></use>
+               </svg>
+            </button>
+            <button class="holder__button holder__button--last">
+               <svg class="holder__icon-header holder__icon-header--last">
+                  <use xlink:href="/../images/sprite.svg#login"></use>
+               </svg>
+               Вход
+            </button>
+         </div>
+      </div>
+   </header>
+
+   <main class="page">
+      <div class="container-features  container">
+         <img class="logo" src="/images/logo.svg" alt="logo" width="361" height="152">
+         <section class="features-list">
+            <article class="features">
+               <h2 class="features__title">
+                  Быстро
+               </h2>
+               <svg class="features__icon">
+                  <use xlink:href="images/sprite.svg#bullet"></use>
+               </svg>
+               <p class="features__text">
+                  Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый
+                  обладатель стильной стрижки-минутки!
+               </p>
+            </article>
+            <article class="features">
+               <h2 class="features__title">
+                  Круто
+               </h2>
+               <svg class="features__icon">
+                  <use xlink:href="images/sprite.svg#bullet"></use>
+               </svg>
+               <p class="features__text">
+                  Забудьте, как вы стриглись раньше. Мы&nbspсделаем из вас звезду футбола или кино!<br>Во всяком случае внешне.
+               </p>
+            </article>
+            <article class="features">
+               <h2 class="features__title">
+                  Дорого
+               </h2>
+               <svg class="features__icon">
+                  <use xlink:href="images/sprite.svg#bullet"></use>
+               </svg>
+               <p class="features__text">
+                  Наши мастера - профессионалы своего&nbspдела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?
+               </p>
+            </article>
+         </section>
+      </div>
+
+      <div class="container-benefits container">
+         <section class="benefits">
+            <h2 class="benefits__title title">Популярные услуги</h2>
+            <ul class="benefits__list">
+               <li class="benefits__item">
+                  <p>Стрижка машинкой</p>
+                  <p>800 ₽</p>
+               </li>
+               <li class="benefits__item">
+                  <p>Стрижка усов</p>
+                  <p>1200 ₽</p>
+               </li>
+               <li class="benefits__item">
+                  <p>Груминг</p>
+                  <p>400 ₽</p>
+               </li>
+               <li class="benefits__item">
+                  <p>Комплексная стрижка</p>
+                  <p>2300 ₽</p>
+               </li>
+            </ul>
+            <button type="submit" class="benefits__button button">
+               Псмотреть все
+            </button>
+         </section>
+
+
+
+         <section class="slider">
+            <h2 class="slider__title title">
+               Фотогалерея
+            </h2>
+            <div class="slider__carousel"  id="slider"> 
+               <img class="slider__item" src="/../images/slider.jpg" alt="Slide 1">
+               <img class="slider__item" src="/../images/slider.jpg" alt="Slide 2">
+               <img class="slider__item" src="/../images/slider.jpg" alt="Slide 3">
+               <img class="slider__item" src="/../images/slider.jpg" alt="Slide 4">
+            </div>
+            <div class="slider__cintrols">
+               <button ></button>
+               <button ></button>
+            </div>
+         </section>
+      </div>
+
+      <div class="container-contacts container">
+         <section class="contacts">
+            <h2 class="contacts__title title">Контакты</h2>
+            <h3 class="contacts__subtitle">Барбершоп «Бородинский»</h3>
+            <p class="contacts__address">Санкт-Петербург, набережная реки Карповки, 5, литера&nbspП.</p>
+            <a class="contacts__phone" href="tel:+78005558628">+7 800 555-86-28</a>
+            <h3  class="contacts__subtitle">Время работы</h3>
+            <p class="contacts__time">пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00</p>
+            <div class="contacts__buttons">
+               <button type="submit" class="contacts__button button">
+                  Как проехать
+               </button>
+               <button type="submit" class="contacts__button button--white button">
+                  Обратная связь
+               </button>
+            </div>
+         </section>
+         <section class="form">
+            <h2 class="form__title title">
+               Записаться
+            </h2>
+            <p class="form__text">
+               Укажите желаемую дату и время и мы свяжемся с вами для подтверждения&nbspброни.
+            </p>
+            
+            <form action="" class="form__record">
+
+               <div class="form__row">
+
+               <div class="form__date">
+                  <label class="label" for="date">Дата</label>
+                  <svg class="form__icon">
+                     <use xlink:href="images/sprite.svg#info"></use>
+                  </svg>
+                  <input class="form__date-input input" type="text" id="date" name="date" placeholder="01.01.2020">
+               </div>
+
+               <div class="form__time">
+                  <label class="label" for="time">Время</label>
+                  <svg class="form__icon">
+                     <use xlink:href="images/sprite.svg#info"></use>
+                  </svg>
+                  <input class="form__time-input input" type="text" id="time" name="time" placeholder="10:10">
+               </div>
+
+               <div class="form__phone">
+                  <label class="label" for="phone">Телефон</label>
+                  <input class="form__time-phone input" type="phone" id="phone" name="phone" placeholder="+7 800 000-00-00">
+               </div>
+            
+               <div class="form__firstname">
+                  <label class="label" class="" for="firstname">Ваше имя</label>
+                  <input class="form__firstname-input input" type="text" id="firstname" name="firstname">
+               </div>
+
+            </div>
+
+               <button type="submit" class="form__button button">
+                  Записаться
+               </button>
+
+            </form>
+         </section>
+      </div>
+         
+   </main>
+
+   <footer class="footer">
+      <div class="foooter__container container">
+
+         <div class="about">
+            <div class="about__logo">
+               <img src="images/logo-footer.svg" alt="logo-footer" width="187" height="24">
+            </div>
+            <div>
+               <p class="about__address">
+                  Санкт-Петербург, набережная реки Карповки, 5, литера П
+               </p>
+               <a class="about__phone" href="tel:+78005558628">+7 800 555-86-28</a>
+               <a class="about__map" href="#">Как нас найти?</a>
+            </div>
+         </div>  
+
+         <section class="email">
+            <h2 class="email__title">
+               Получайте лучшие предложения
+            </h2>
+            <form action="" class="email__form">
+               <input class="email__input input" type="email" name="rmail" placeholder="email@htmlacademy.ru">
+               <button type="submit" class="email__button">
+                  <svg class="email__button-icon">
+                     <use xlink:href="images/sprite.svg#arrow-right"></use>
+                  </svg>
+               </button>
+            </form>
+         </section>
+
+         <section class="socials">
+            <h2 class="socials__title">
+               Давайте дружить
+            </h2>
+            <div class="socials__list">
+               <button class="socials__item">
+                  <svg class="socials__item-icon">
+                     <use xlink:href="images/sprite.svg#twitter"></use>
+                  </svg>
+               </button>
+               <button class="socials__item">
+                  <svg class="socials__item-icon">
+                     <use xlink:href="images/sprite.svg#vk"></use>
+                  </svg>
+               </button>
+               <button class="socials__item">
+                  <svg class="socials__item-icon">
+                     <use xlink:href="images/sprite.svg#instagram"></use>
+                  </svg>
+               </button>
+            </div>
+            <p class="socials__author">
+               Сделано в <a href="#" class="socials__author-link">.html academy</a></span>
+            </p>
+         </section>
+
+      </div>
+   </footer>
 </body>
 </html>
